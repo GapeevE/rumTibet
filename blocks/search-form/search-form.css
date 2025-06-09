@@ -1,0 +1,31 @@
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.search-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.search-form__label {
+    font-family: 'NunitoFont';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FDFDFD;
+    text-wrap: nowrap;
+    text-indent: 4px;
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'NunitoFont';
+    src: url('./NEXT\ ART_Heavy.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'NunitoFont';
+    src: url('./NEXT\ ART_Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NunitoFont';
+    src: url('./NEXT\ ART_SemiBold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NunitoFont';
+    src: url('./NEXT\ ART_Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NunitoFont';
+    src: url('./NEXT\ ART_Light.otf') format('opentype');
+    font-weight: 300;
+}

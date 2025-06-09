@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    padding: 20px 12% 72px;
+    background-image: url(./header.png);
+    background-size: cover;
+}
+
+.header__modal-menu {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1A3E3E;
+    z-index: 1;
+}
+
+.header__modal_button_close {
+    z-index: 2;
+}
+
+.header_theme_space {
+    padding-top: 360px;
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding: 10px 4% 50px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    .header {
+        padding: 16px 8% 64px;
+    }
+}

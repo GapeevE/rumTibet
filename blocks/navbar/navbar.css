@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar__logo {
+    width: 128px;
+    cursor: pointer;
+    transition: background-color 3s, transform 1.5s;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 425px) {
+    .navbar__logo {
+        width: 88px;
+    }
+
+    .navbar__logo:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    .navbar__logo {
+        width: 100px;
+    }
+}

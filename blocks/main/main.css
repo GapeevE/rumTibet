@@ -1,0 +1,43 @@
+.main {
+    padding: 0;
+}
+
+.main__section {
+    padding: 80px 12%;
+}
+
+.main__section_direction_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section_color_white {
+    background: #FDFDFD;
+}
+
+.main__section_color_grey {
+    background: #F3F5F4;
+}
+
+@media (max-width: 425px) {
+    .main {
+        padding: 0;
+    }
+
+    .main__section {
+        padding: 40px 4%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    .main {
+        padding: 0;
+    }
+
+    .main__section {
+        padding: 60px 8%;
+    }
+}

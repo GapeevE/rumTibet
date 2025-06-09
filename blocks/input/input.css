@@ -1,0 +1,141 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(./input__date.svg) no-repeat;
+    height: 18px;
+    width: 18px;
+    border-width: thin;
+}
+
+input[type="date"]:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+
+.input_type_date::before {
+    content: 'Дата похода';
+    font-family: 'NunitoFont';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FDFDFD;
+    text-wrap: nowrap;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(100% - 30px);
+    background: transparent;
+}
+
+input[type="text"]::placeholder, input[type="number"]::placeholder {
+    font-family: 'NunitoFont';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FDFDFD;
+    text-wrap: nowrap;
+}
+
+input[type="text"]::-webkit-calendar-picker-indicator, input[type="number"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(./input__arrow-down.svg) no-repeat;
+    height: 20px;
+    width: 20px;
+    border-width: thin;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input {
+    position: relative;
+    outline: none;
+    border-radius: 8px;
+    background: transparent;
+    padding: 8px;
+    border: 1px solid #E1E3E4;
+    font-family: 'NunitoFont';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FDFDFD;
+    cursor: pointer;
+}
+
+input:focus, input[type="date"]:focus-within {
+    outline: 1px solid #E1E3E4;
+    transform: scale(1.1);
+}
+
+input:active::before {
+    content: none !important; 
+}
+
+input:focus::before {
+    content: none !important; 
+}
+
+@media (max-width: 425px) {
+    input {
+        padding: 4px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    input[type="text"]::placeholder, input[type="number"]::placeholder {
+        font-size: 10px;
+        line-height: 12px;
+        text-wrap: wrap;
+    }
+
+    .input_type_date::before {
+        padding: 4px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    input[type="text"]::-webkit-calendar-picker-indicator, input[type="number"]::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-calendar-picker-indicator {
+        padding: 4px;
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    input {
+        padding: 6px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    input[type="text"]::placeholder, input[type="number"]::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        text-wrap: wrap;
+    }
+
+    .input_type_date::before {
+        padding: 6px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    input[type="text"]::-webkit-calendar-picker-indicator, input[type="number"]::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-calendar-picker-indicator {
+        padding: 6px;
+        height: 12px;
+        width: 12px;
+    }
+}

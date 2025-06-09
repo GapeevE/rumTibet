@@ -1,0 +1,115 @@
+.multimedia {
+    overflow: hidden;
+}
+
+.multimedia video {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.multimedia_size_m {
+    height: 400px;
+    width: 350px;
+}
+
+.multimedia_border_m {
+    border-radius: 24px;
+}
+
+.multimedia_type_flower-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 520px;
+    height: 520px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.multimedia_type_flower {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    transition: background-color 3s, transform 0.5s;
+}
+
+.multimedia_type_flower:hover {
+    transform: scale(1.05);
+}
+
+.multimedia_border_flower_type_right {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.multimedia_border_flower_type_left {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.multimedia_margin_right {
+    margin-right: 80px;
+}
+
+@media (max-width: 425px) {
+    .multimedia_size_m {
+        height: 300px;
+        width: 250px;
+    }
+
+    .multimedia_margin_right {
+        margin-right: 0;
+    }
+
+    .multimedia_type_flower {
+        width: 100px;
+        height: 100px;
+    }
+
+    .multimedia_type_flower-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .multimedia_border_flower_type_right {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .multimedia_border_flower_type_left {
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    .multimedia_size_m {
+        height: 350px;
+        width: 300px;
+    }
+
+    .multimedia_margin_right {
+        margin-right: 60px;
+    }
+
+    .multimedia_type_flower {
+        width: 170px;
+        height: 170px;
+    }
+
+    .multimedia_type_flower-container {
+        width: 360px;
+        height: 360px;
+    }
+
+    .multimedia_border_flower_type_right {
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .multimedia_border_flower_type_left {
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+}

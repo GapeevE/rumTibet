@@ -1,0 +1,96 @@
+.main-content {
+    display: flex;
+}
+
+.main-content_container_row-reverse {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-content_container_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-behavior: smooth;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-content_container_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.main-content_container_column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-content_text {
+    font-family: 'NunitoFont';
+    flex: 1 1 0;
+    min-width: 100px;
+    max-width: 500px;
+    overflow-wrap: break-word;
+}
+
+.main-content_size_fit {
+    min-width: min-content;
+    max-width: max-content;
+}
+
+.main-content_text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #18121E;
+}
+
+.main-content_text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #18121E;
+}
+
+.main-content_text h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #F2BE22;
+}
+
+.main-content_self_start {
+    align-self: flex-start;
+}
+
+.main-content_position_absolute-bottom {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}
+
+.main-content_position_relative {
+    position: relative;
+}
+
+@media (max-width: 425px) {
+    .main-content_position_absolute-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+    .main-content_position_absolute-bottom {
+        position: absolute;
+        bottom: -60px;
+    }
+}

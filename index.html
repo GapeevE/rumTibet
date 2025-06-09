@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./blocks/base.css">
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" id="header_navbar">
+            <img src="./blocks/navbar/navbar.png" alt="RumTibetLogo" class="navbar__logo" onclick="window.location.href='index.html'">
+            <div class="menu" id="header_menu">
+                <a href="" class="menu__a menu__a_size_l">Главная</a>
+                <a href="" class="menu__a menu__a_size_l">Про гида</a>
+                <a href="" class="menu__a menu__a_size_l">Программа тура</a>
+                <a href="" class="menu__a menu__a_size_l">Стоимость</a>
+                <a href="" class="menu__a menu__a_size_l">Блог</a>
+                <a href="" class="menu__a menu__a_size_l">Контакты</a>
+                <button class="button button_color_dark menu_button" type="button">Консультация</button>
+                <button class="menu__svg-btn header__modal_button_close" type="button" id="header_btn"></button>
+            </div>
+        </nav>
+        <div class="header__modal-menu">
+            <div class="menu menu_position_vertical" id="modal-menu"></div>
+        </div>
+        <div class="header-content header_theme_space">
+            <h1 class="header-content__header">
+                Насладись прогулкой в горах с командой единомышленников
+            </h1>
+            <form action="" class="search-form">
+                <div class="search-form__group">
+                    <input type="text" list="location" class="input" name="input_location" placeholder="Локация для тура" required>
+                    <datalist id="location">
+                        <option value="Кайлаш">
+                        <option value="Самье">
+                        <option value="Равок">
+                    </datalist>
+                    <label for="input_location" class="search-form__label">выберите из списка</label>
+                </div>
+                <div class="search-form__group">
+                    <input type="date" class="input input_type_date" name="input_date" required>
+                    <label for="input_date" class="search-form__label">укажите дату</label>
+                </div>
+                <div class="search-form__group">
+                    <input type="number" list="count" class="input" name="input_count" placeholder="Участники" min="4" max="50" required>
+                    <datalist id="count">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                    </datalist>
+                    <label for="input_location" class="search-form__label">минимум 4 человека</label>
+                </div>
+                <button type="button" class="button button_color_light search-form__button">Найти программу</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__section main__section_color_white">
+            <div class="main-content main-content_container_row-reverse">
+                <div class="main-content main-content_position_relative">
+                    <div class="multimedia multimedia_border_m">
+                        <img src="./blocks/multimedia/mountains.jpg" class="multimedia_margin_right multimedia_size_m" alt="mountain_image">
+                    </div>
+                    <div class="multimedia multimedia_border_m main-content_position_absolute-bottom">
+                        <video autoplay controls muted class="multimedia_size_m">
+                            <source src="./blocks/multimedia/video.mp4">
+                            mountain_video
+                        </video>
+                    </div>
+                </div>
+                <div class="main-content main-content_container_column">
+                    <div class="main-content main-content_container_column main-content_text">
+                        <h4 class="main-content_self_start">о нашем походе</h4>
+                        <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+                    </div>
+                    <div class="main-content main-content_text">
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                    </div>
+                    <div class="main-content">
+                        <button class="button button_color_dark">Программа тура</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section_color_grey">
+            <div class="main-content main-content_container_row-reverse">
+                <div class="main-content main-content_container_column">
+                    <div class="main-content main-content_container_column main-content_text">
+                        <h4 class="main-content_self_start">Наше предложение</h4>
+                        <h2>Лучшие программы для тебя</h2>
+                    </div>
+                    <div class="main-content main-content_text">
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+                    </div>
+                    <div class="card card_type_small card_direction_row">
+                        <img src="./blocks/card/icons/people.png" alt="icon" class="card_icon">
+                        <div class="card_direction_column">
+                            <h6>Опытный гид</h6>
+                            <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+                    <div class="card card_type_small card_direction_row">
+                        <img src="./blocks/card/icons/shield.png" alt="icon" class="card_icon">
+                        <div class="card_direction_column">
+                            <h6>Безопасный поход</h6>
+                            <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+                    <div class="card card_type_small card_direction_row">
+                        <img src="./blocks/card/icons/tag.png" alt="icon" class="card_icon">
+                        <div class="card_direction_column">
+                            <h6>Лояльные цены</h6>
+                            <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                        </div>
+                    </div>
+                    <div class="main-content main-content_self_start">
+                        <button class="button button_color_dark">Стоимость программ</button>
+                    </div>
+                </div>
+                <div class="main-content main-content_container_column">
+                    <div class="multimedia_type_flower-container">
+                        <img src="./blocks/multimedia/flower/part_1.jpg" class="multimedia_type_flower multimedia_border_flower_type_right" alt="...">
+                        <img src="./blocks/multimedia/flower/part_2.jpg" class="multimedia_type_flower multimedia_border_flower_type_left" alt="...">
+                        <img src="./blocks/multimedia/flower/part_3.jpg" class="multimedia_type_flower multimedia_border_flower_type_left" alt="...">
+                        <img src="./blocks/multimedia/flower/part_4.jpg" class="multimedia_type_flower multimedia_border_flower_type_right" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__section main__section_color_white main__section_direction_column">
+            <div class="main-content main-content_container_column main-content_text main-content_size_fit">
+                <h4>по версии отдыхающих</h4>
+                <h2>Популярные направления</h2>
+            </div>
+            <div class="main-content_container_wrapper main-content_position_relative">
+                <div class="card card_type_carousel main-content_position_relative" style="background-image: url(./blocks/card/images/lake.png);">
+                    <div class="card__value">
+                        <img src="./blocks/card/icons/star.svg" alt="star">
+                        <p>4.9</p>
+                    </div>
+                    <div class="card__dropdown">
+                        <div class="card card_direction_row">
+                            <div class="card card_direction_column">
+                                <h5>Озеро возле гор</h5>
+                                <p>романтическое приключение</p>
+                            </div>
+                            <div class="card card__price">
+                                <p>480 $</p>
+                            </div>
+                        </div>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.</p>
+                        <button class="button button_color_dark main-content_self_start">Программа тура</button>
+                    </div>
+                </div>
+                <div class="card card_type_carousel main-content_position_relative" style="background-image: url(./blocks/card/images/night.png);">
+                    <div class="card__value">
+                        <img src="./blocks/card/icons/star.svg" alt="star">
+                        <p>4.5</p>
+                    </div>
+                    <div class="card__dropdown">
+                        <div class="card card_direction_row">
+                            <div class="card card_direction_column">
+                                <h5>Ночь в горах</h5>
+                                <p>в компании друзей</p>
+                            </div>
+                            <div class="card card__price">
+                                <p>500 $</p>
+                            </div>
+                        </div>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.</p>
+                        <button class="button button_color_dark main-content_self_start">Программа тура</button>
+                    </div>
+                </div>
+                <div class="card card_type_carousel main-content_position_relative" style="background-image: url(./blocks/card/images/yoga.png);">
+                    <div class="card__value">
+                        <img src="./blocks/card/icons/star.svg" alt="star">
+                        <p>5.0</p>
+                    </div>
+                    <div class="card__dropdown">
+                        <div class="card card_direction_row">
+                            <div class="card card_direction_column">
+                                <h5>Йога в горах</h5>
+                                <p>для тех, кто забоится о себе</p>
+                            </div>
+                            <div class="card card__price">
+                                <p>230 $</p>
+                            </div>
+                        </div>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.</p>
+                        <button class="button button_color_dark main-content_self_start">Программа тура</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <button class="button button_color_dark">Стоимость программ</button>
+            </div>
+        </section>
+    </main>
+    <script src="./blocks/header/header.js"></script>
+    <script src="./blocks/input/input.js"></script>
+    <script src="./blocks/search-form/search-form.js"></script>
+</body>
+</html>

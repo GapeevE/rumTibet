@@ -1,0 +1,58 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu_position_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-left: 6%;
+}
+
+.menu__svg-btn {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    fill: #FDFDFD;
+}
+
+.menu__svg-btn:hover {
+    transition: 0.2s;
+    fill: #F2BE22;
+}
+
+.menu__a {
+    font-family: 'NunitoFont';
+    outline: none;
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: #FDFDFD;
+    fill: #FDFDFD;
+    display: flex;
+    gap: 10px;
+    transition: background-color 0.6s, transform 0.5s;
+}
+
+.menu__a:hover {
+    color: #F2BE22;
+    fill: #F2BE22;
+    text-decoration: underline;
+    transform: scale(110%);
+}
+
+.menu__a_size_l {
+    size: 18px;
+    font-weight: 600;
+}
+
+.menu__a_size_m {
+    size: 14px;
+    font-weight: 400;
+}
+

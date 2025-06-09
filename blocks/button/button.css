@@ -1,0 +1,41 @@
+.button {
+    font-family: 'NunitoFont';
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.6s, transform 0.5s;
+}
+
+.button:hover {
+    transform: scale(110%);
+}
+
+.button_size_huge {
+    padding: 16px 36px;
+}
+
+.button_color_dark {
+    background: #1A3E3E;
+    color: #FDFDFD;
+}
+
+.button_color_dark:hover {
+    background: #FDFDFD;
+    color: #1A3E3E;
+    border: 1px solid #1A3E3E;
+}
+
+.button_color_light {
+    color: #1A3E3E;
+    background: #FDFDFD;
+}
+
+.button_color_light:hover {
+    color: #FDFDFD;
+    background: #1A3E3E;
+    border: 1px solid #1A3E3E;
+}
