@@ -1,0 +1,79 @@
+.footer {
+    display: flex;
+    background-color: #1A3E3E;
+    padding: 80px 12%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FDFDFD;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(18, 30, 31, 0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(18, 30, 31, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(18, 30, 31, 0.2);
+    padding: 30px;
+    border-radius: 6px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.footer_direction_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer__email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.footer__email-form label, .footer__email-form input, .footer__email-form input::placeholder, .footer__email-form p, .footer__email-form a {
+    font-family: 'NunitoFont';
+}
+
+.footer__email-form label {
+    color: #18121E;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.footer__email-form input {
+    background-color: #F3F5F4;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    border: solid transparent 2px;
+}
+
+.footer__email-form input:focus {
+    border: solid #1A3E3E 2px;
+}
+
+.footer__email-form input, .footer__email-form input::placeholder {
+    color: #18121E;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.footer__email-form p, .footer__email-form a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-wrap: wrap;
+}

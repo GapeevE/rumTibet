@@ -10,6 +10,7 @@
 @import url(./main-content/main-content.css);
 @import url(./multimedia/multimedia.css);
 @import url(./card/card.css);
+@import url(./footer/footer.css);
 
 * {
     margin: 0;
