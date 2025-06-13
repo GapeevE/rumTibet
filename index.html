@@ -64,7 +64,7 @@
                         <img src="./blocks/multimedia/mountains.jpg" class="multimedia_margin_right multimedia_size_m" alt="mountain_image">
                     </div>
                     <div class="multimedia multimedia_border_m main-content_position_absolute-bottom">
-                        <video autoplay controls muted class="multimedia_size_m">
+                        <video autoplay controls muted loop class="multimedia_size_m">
                             <source src="./blocks/multimedia/video.mp4">
                             mountain_video
                         </video>
@@ -134,7 +134,7 @@
                 <h4>по версии отдыхающих</h4>
                 <h2>Популярные направления</h2>
             </div>
-            <div class="main-content_container_wrapper main-content_position_relative">
+            <div class="main-content_container_wrapper main-content_position_relative" id="carousel-wrapper">
                 <div class="card card_type_carousel main-content_position_relative" style="background-image: url(./blocks/card/images/lake.png);">
                     <div class="card__value">
                         <img src="./blocks/card/icons/star.svg" alt="star">
@@ -202,7 +202,7 @@
                 <h4>делимся впечатлениями</h4>
                 <h2>Блог о путешествиях</h2>
             </div>
-            <div class="main-content_container_wrapper_type_stretch main-content_position_relative">
+            <div class="main-content_container_wrapper_type_stretch main-content_position_relative" id="stretch-wrapper">
                 <div class="card card_type_normal">
                     <img src="./blocks/card/images/italy.jpg" alt="Italy">
                     <div class="card card_direction_column_content_evenly">
@@ -252,75 +252,209 @@
                 <button class="button button_color_dark">Другие материалы</button>
             </div>
         </section>
-        <section class="main__section main__section_color_white main__section_direction_column">
+        <section class="main__section main__section_color_white main__section_direction_column main-content_position_relative">
             <div class="main-content main-content_container_column main-content_text main-content_size_fit">
                 <h4>фото-отчет</h4>
                 <h2>Делимся впечатлениями</h2>
             </div>
-            <div class="multimedia_wrapper">
+            <div class="multimedia_wrapper" id="multimedia-wrapper">
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/1.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="1">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/2.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="2">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/3.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="3">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/4.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="4">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/5.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="5">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
                 <div class="multimedia_type_card-container">
                     <img src="./blocks/multimedia/photos/6.jpg" alt="...">
-                    <div class="multimedia_type_card-container-dark">
+                    <div class="multimedia_type_card-container-dark" value="6">
                         <img src="./blocks/multimedia/zoom.svg" alt="zoom">
                     </div>
                 </div>
             </div>
+            <div>
+                <button class="multimedia__button" id="multimedia-arrow-left">
+                    <svg class="multimedia__arrow-left" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                    </svg>
+                </button>
+                <button class="multimedia__button" id="multimedia-arrow-right">
+                    <svg class="multimedia__arrow-right" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="multimedia__modal" id="multimedia-modal"></div>
+            <div class="multimedia__bg-dark" id="bg-dark"></div>
             <div class="main-content">
                 <button class="button button_color_dark">Наш pinterest</button>
             </div>
         </section>
-        <section class="footer__form">
-            <div class="footer__container">
-                <div class="main-content main-content_container_column main-content_text">
-                    <h4 class="main-content_self_start">актуально</h4>
-                    <h2>Получайте полезные рассылки о путешествиях</h2>
-                </div>
-                <form class="footer__email-form" action="#" method="post">
-                    <label for="email">Введите e-mail адрес</label>
-                    <div class="footer_direction_row">
-                        <input type="email" name="email" id="email" placeholder="name@domain.com" required>
-                        <button type="submit" class="button button_color_dark">Подписаться на новости</button>
-                    </div>
-                    <p>подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных рассылок</a></p>
-                </form>
+        <section class="footer__form footer_direction_row">
+            <div class="main-content main-content_container_column main-content_text footer_wight_min-content">
+                <h4 class="main-content_self_start">актуально</h4>
+                <h2>Получайте полезные рассылки о путешествиях</h2>
             </div>
+            <form class="footer__email-form" action="#" method="post">
+                <label for="email">Введите e-mail адрес</label>
+                <div class="footer_direction_row">
+                    <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+                    <button type="submit" class="button button_color_dark">Подписаться на новости</button>
+                </div>
+                <p class="footer__text">подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных рассылок</a></p>
+            </form>
         </section>
-        <footer class="footer">
-            123
-        </footer>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_direction_column">
+                <div class="footer_direction_column footer_content_text">
+                    <h3>Компания «РумТибет»</h3>
+                    <p class="footer_content_text_type_p">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+                </div>
+                <div class="footer_direction_row">
+                    <p class="footer_content_text footer_content_text_type_bold">info@domain.com</p>
+                    <p class="footer_content_text footer_content_text_type_bold">+7 (123) 456-78-90</p>
+                </div>
+                <div class="footer_direction_row">
+                    <a href="#">
+                        <img class="footer_content_text_type_icon" src="./blocks/footer/icons/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#">
+                        <img class="footer_content_text_type_icon" src="./blocks/footer/icons/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img class="footer_content_text_type_icon" src="./blocks/footer/icons/pinterest.svg" alt="pinterest">
+                    </a>
+                    <a href="#">
+                        <img class="footer_content_text_type_icon" src="./blocks/footer/icons/skype.svg" alt="skype">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_direction_column footer_content_text">
+                <h3>Наши услуги</h3>
+                <ul class="footer_content_text footer_content_text_type_ul">
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Прогулки в горы летом
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Зимние походы в горы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Посещение храмов в горах
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Экстремальные виды туризма
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Походы в джунглях Амазонии
+                        </a>
+                        <span class="footer_content_text footer__badget">new</span>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Поездка в Африку
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_direction_column footer_content_text">
+                <h3>Важно для путешествий</h3>
+                <ul class="footer_content_text footer_content_text_type_ul">
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Как собрать в долгий поход?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Жизненно важные предметы для похода
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Медицинская страховка, гарантии безопасности
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_content_text_type_ul__a">
+                            <svg width="10" height="14" viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"/>
+                            </svg>
+                            Если вы врач - загляните сюда
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__block-clozed footer_content_text">
+            <p>ИП Константинопольский К.К., 2023</p>
+            <p class="footer_content_text_type_bold">Политика обработки персональных данных</p>
+        </div>
+    </footer>
     <script src="./blocks/header/header.js"></script>
     <script src="./blocks/input/input.js"></script>
     <script src="./blocks/search-form/search-form.js"></script>
+    <script src="./blocks/card/card.js"></script>
+    <script src="./blocks/multimedia/multimedia.js"></script>
 </body>
 </html>
