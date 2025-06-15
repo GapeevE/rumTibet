@@ -92,20 +92,23 @@
     cursor: pointer;
 }
 
-.multimedia__arrow-left, .multimedia__arrow-right {
+.multimedia__arrow-left, .multimedia__arrow-right, .multimedia__arrow-left-modal, .multimedia__arrow-right-modal {
     height: 50px;
     width: 50px;
     fill: rgba(0, 0, 0, 0.292);
-    display: none;
     transition: background-color 3s, transform 0.5s;
 }
 
-.multimedia__arrow-left:hover {
+.multimedia__arrow-left, .multimedia__arrow-right {
+    display: none;
+}
+
+.multimedia__arrow-left:hover, .multimedia__arrow-left-modal:hover {
     transform: rotate(180deg) translateY(-13px) scale(1.1);
     fill: rgba(0, 0, 0, 0.593);
 }
 
-.multimedia__arrow-right:hover {
+.multimedia__arrow-right:hover, .multimedia__arrow-right-modal:hover {
     transform: scale(1.1);
     fill: rgba(0, 0, 0, 0.593);
 }
