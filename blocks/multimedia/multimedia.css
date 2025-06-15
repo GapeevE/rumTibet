@@ -121,6 +121,16 @@
     bottom: 110px;
 }
 
+.multimedia__arrows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 .multimedia__modal {
     position: absolute;
     top: 0;
@@ -128,8 +138,24 @@
     padding: 10px;
     border-radius: 10px;
     display: none;
-    vertical-align: middle;
+    background-color: #FDFDFD;
+    width: 90%;
+}
+
+.multimedia__modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.multimedia__modal_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: auto;
+    width: 100%;
 }
 
 .multimedia__bg-dark {

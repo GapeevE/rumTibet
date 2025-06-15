@@ -58,6 +58,18 @@ $btnLeft.on('click', () => {
     })
 });
 
+let $modalLeft = $('#multimedia-arrow-left-modal');
+let $modalRight = $('#multimedia-arrow-right-modal');
+let currentValue = '';
+let valuesArrow = $multimediaWrapper.find('.multimedia_type_card-container-dark').map(function() {
+    return $(this).attr('value');
+}).get();
+let lenghtValues = valuesArrow.length;
+
+function findValueIndex(value) {
+    return valuesArrow.indexOf(value);
+};
+
 $(window).on('resize', function() {
     multimediaWidth = getWidthMultimediaWrapper();
     sliderMultimediaCreate();
@@ -65,12 +77,35 @@ $(window).on('resize', function() {
 
 $('#bg-dark').on('click', function() {
     $('#bg-dark').hide();
-    $('#multimedia-modal').children().remove();
+    $('#img-modal').children().remove();
     $('#multimedia-modal').hide();
 });
 
-$('.multimedia_type_card-container-dark').on('click', function(e) {
+$('.multimedia_type_card-container-dark').on('click', function() {
     $('#bg-dark').show();
     $('#multimedia-modal').show();
-    $('#multimedia-modal').html(`<img src="./blocks/multimedia/photos/${$(this).attr('value')}.jpg" alt="img-modal">`);
+    $('#img-modal').append(`<img src="./blocks/multimedia/photos/${$(this).attr('value')}.jpg" alt="img-modal">`);
+    currentValue = $(this).attr('value');
+});
+
+$modalLeft.on('click', function() {
+    indexCurentValue = findValueIndex(currentValue);
+    if (indexCurentValue === 0) {
+        currentValue = valuesArrow[lenghtValues - 1];
+    } else {
+        currentValue = valuesArrow[indexCurentValue - 1];
+    }
+    $('#img-modal').children().remove();
+    $('#img-modal').append(`<img src="./blocks/multimedia/photos/${currentValue}.jpg" alt="img-modal">`);
+});
+
+$modalRight.on('click', function() {
+    indexCurentValue = findValueIndex(currentValue);
+    if (indexCurentValue === (lenghtValues - 1)) {
+        currentValue = valuesArrow[0];
+    } else {
+        currentValue = valuesArrow[indexCurentValue + 1];
+    }
+    $('#img-modal').children().remove();
+    $('#img-modal').append(`<img src="./blocks/multimedia/photos/${currentValue}.jpg" alt="img-modal">`);
 });
