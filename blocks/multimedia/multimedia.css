@@ -121,6 +121,17 @@
     bottom: 110px;
 }
 
+.multimedia__arrow-left-modal {
+    transform: rotate(180deg) translateY(-13px);
+    left: 0;
+    bottom: 110px;
+}
+
+.multimedia__arrow-right-modal {
+    right: 0;
+    bottom: 110px;
+}
+
 .multimedia__arrows {
     display: flex;
     flex-direction: row;
