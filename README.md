@@ -1,36 +1,36 @@
 # RUMTIBET
 
-This project is a layout of a landing page for a travel agency using an open layout.
+This project is a landing page implementation for a travel agency, based on an open-source design layout.
 
 ![project preview](./accets/preview.png)
 
-## 🗻 Stack
+## 🗻 Tech Stack
 
 - <img src="./accets/icons/HTML5.png" width="24" height="24"> HTML5
 - <img src="./accets/icons/CSS3.png" width="24" height="24"> CSS3
-- <img src="./accets/icons/JS.png" width="24" height="24"> JS
+- <img src="./accets/icons/JS.png" width="24" height="24"> JavaScript
 - <img src="./accets/icons/jquery.png" width="24" height="24"> jQuery
 
-👉 [Watch a live demo](https://gapeeve.github.io/rumTibet/)
+👉 [View live demo](https://gapeeve.github.io/rumTibet/)
 
-## 🌅 Project capabilities
+## 🌅 Key Features
 
-- Adaptive layout
-- Interactive elements using jQuery
+- Fully responsive layout
+- Interactive elements powered by jQuery
 - Semantic HTML markup
-- CSS animations and effects
+- CSS animations and visual effects
 - Animated sliders and modal windows
-- Using BEM methodology
+- BEM methodology implementation
 
-## 🌄 Layout
+## 🌄 Design Source
 
-The project is laid out according to an open layout:
+The project follows the original design layout:
 
 - Figma: [RUMTIBET](https://www.figma.com/design/NrPZZU8u1sLytOicIHcIAx/РумТибет?node-id=0-1&p=f&t=oseTYI7yfUk4Oyp6-0)
-- Author: [Avanesov Yuri](https://avanesov.pro/portfolio/rumtibet/)
+- Designer: [Yuri Avanesov](https://avanesov.pro/portfolio/rumtibet/)
 
 ## License
 
-The project was created for educational purposes.
-All rights to the design belong to the author of the layout.
-The code is available under the MIT license.
+Created for educational purposes.  
+All design rights belong to the layout author.  
+Source code is available under the MIT license.
